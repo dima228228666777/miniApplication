@@ -27,7 +27,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 20% 68% 12%;
+  grid-template-rows: 22% 66% 12%;
 }
 .top{
   background-color: hsl(239, 80%, 30%);
@@ -38,6 +38,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  img{
+    width: 80%;
+  }
 }
 .bottom{
   background-color: hsl(239, 80%, 30%);
@@ -45,14 +48,14 @@
   justify-content: center;
   align-items: center;
 }
-.buttonPlay{
+/*.buttonPlay{
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: hsl(29, 100%, 98%);
   text-decoration: none;
-}
+}*/
 .buttonSupport{
   text-align: center;
   display: flex;
@@ -75,11 +78,18 @@
 .main2{
   background-color: hsl(239, 80%, 20%);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.main3{
+  background-color: hsl(239, 80%, 20%);
+  display: flex;
   flex-direction: column;
   color: hsl(29, 100%, 98%);
   padding: 20px;
+  img{
+    width: 64px;
+    height: 64px;
+  }
 }
 .bottom2{
   background-color: hsl(239, 80%, 30%);
@@ -94,4 +104,94 @@
   justify-content: center;
   color: hsl(29, 100%, 98%);
   text-decoration: none;
+}
+.energy{
+  color: #6ed7f7;
+  display: flex;
+  padding: 20px;
+  font-size: 32px;
+  img{
+    margin-left: 10px;
+  }
+}
+.score2{
+  display: flex;
+  justify-content: center;
+  color: hsl(29, 100%, 98%);
+  font-size: 40px;
+}
+.score21{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: aliceblue;
+}
+.energy{
+  color: hsl(194, 90%, 30%);
+  font-size: 32px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  img{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    z-index: 3;
+  }
+}
+.tickets{
+  color: hsl(293, 90%, 40%);
+  display: flex;
+  font-size: 32px;
+  justify-content: left;
+  align-items: center;
+  img{
+    position: relative;
+    bottom: 0px;
+    width: 64px;
+    height: 64px;
+    z-index: 3;
+  }
+}
+.score1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score3{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+#ticketBox, #energyBox{
+  width: 120px;
+  height: 37px;
+  background-color: rgb(95, 95, 95);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 30px;
+}
+#energyFill{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6ed7f7 0%, #6ea2f7 100%);
+}
+#ticketFill{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #e76ef7 0%, #e76ef7 100%);
+}
+#energyText, #ticketNum{
+z-index: 2;
 }

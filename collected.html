@@ -8,29 +8,52 @@
 </head>
 <body>
   <div class="MainScreen">
-    <div class="top"></div>
-    <div class="main">
-      <a href="#" class="hrefPlay">
-        <div class="buttonPlay">
-          <img src="img/icons8-курсор-рука-64.png">
-          <p>play!</p>
+    <div class="top">
+      <div class="score1">
+        <div class="energy">
+          <img src="img/energy_32.png">
+          <div id="energyBox">
+            <span id="energyText">500</span>
+            <div id="energyFill"></div>
+          </div>
         </div>
-      </a>
+        <div class="tickets">
+          <img src="img/ticket_32.png">
+          <div id="ticketBox">
+            <span id="ticketNum">0</span>
+            <div id="ticketFill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="score21">
+        <p>clicks</p>
+      </div>
+      <div class="score2">
+        <span id="taps">0</span>
+      </div>
+      <div class="score3">
+        <p> + <span id="tapsInHour">0</span> clicks in Hour</p>
+      </div>
+    </div>
+    <div class="main3">
+      <div id="touchPower">
+        <img src="img/icons8-курсор-рука-64.png">
+        <p>increase click count</p>
+      </div>
+      <div id="energyRefull">
+        <img src="img/energy_32.png">
+      </div>
+      <div id="energySpeed"></div>
     </div>
     <div class="bottom">
-      <a href="#" class="hrefSupport">
-        <div class="buttonSupport">
-          <img src="img/icons8-поддержка-64.png">
-          <p>support</p>
-        </div>
-      </a>
-      <a href="#" class="hrefSettings">
+      <a href="index.html" class="hrefSettings">
         <div class="buttonSettings">
-          <img src="img/icons8-настройки-64.png">
-          <p>settings</p>
+          <img src="img/return.png">
+          <p>back</p>
         </div>
       </a>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
