@@ -7,7 +7,7 @@ let fullEnergy = localStorage.getItem("capLVL")
 	: 500;
 let tapPower = 1;
 let percentEnergy;
-let refullEnSpeed = 1000;
+let refullEnSpeed = 1;
 let touchLVL = localStorage.getItem("tapLVL")
 	? Number(localStorage.getItem("tapLVL"))
 	: 1;
@@ -150,7 +150,8 @@ function clicker(event) {
 }
 function refullEnergy() {
 	if (energy < fullEnergy) {
-		energy += speedLVL;
+		refullEnSpeed = speedLVL + 1;
+		energy += refullEnSpeed;
 		percentEnergy = (energy / fullEnergy) * 100;
 	}
 	if (energy > fullEnergy) {
