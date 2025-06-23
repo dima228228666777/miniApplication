@@ -38,9 +38,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  img{
+}
+.main img{
     width: 80%;
-  }
 }
 .bottom{
   background-color: hsl(239, 80%, 30%);
