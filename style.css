@@ -1,0 +1,245 @@
+.LoadScreen {
+	background-color: #c95c13;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	animation: animationText 6s forwards;
+}
+.LText {
+	color: #da8852;
+	font-size: 30px;
+	animation: animationText 6s forwards;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+@keyframes animationText {
+	0% {
+		color: hsl(24, 65%, 59%);
+		font-size: 30px;
+		display: flex;
+	}
+	25% {
+		color: hsl(24, 65%, 64%);
+		font-size: 34px;
+		display: flex;
+	}
+	50% {
+		color: hsl(24, 65%, 59%);
+		font-size: 30px;
+		display: flex;
+	}
+	75% {
+		color: hsl(24, 65%, 64%);
+		font-size: 34px;
+		display: flex;
+	}
+	100% {
+		color: hsl(24, 65%, 59%);
+		font-size: 30px;
+		display: none;
+	}
+}
+.MainScreen {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 22% 66% 12%;
+}
+.top {
+	background-color: hsl(239, 80%, 30%);
+}
+.main {
+	background-color: hsl(239, 80%, 20%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main img {
+	width: 80%;
+}
+.bottom {
+	background-color: hsl(239, 80%, 30%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*.buttonPlay{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(29, 100%, 98%);
+  text-decoration: none;
+}*/
+.buttonSupport {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: hsl(29, 100%, 98%);
+	text-decoration: none;
+}
+.buttonSettings {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: hsl(29, 100%, 98%);
+	text-decoration: none;
+}
+.buttonPlay img {
+	width: fit-content;
+}
+.main2 {
+	background-color: hsl(239, 80%, 20%);
+	display: flex;
+	flex-direction: column;
+	color: hsl(29, 100%, 98%);
+	justify-content: center;
+	align-items: center;
+}
+.main3 {
+	background-color: hsl(239, 80%, 20%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: hsl(29, 100%, 98%);
+	padding: 20px;
+}
+.main3 img {
+	width: 64px;
+	height: 64px;
+}
+.bottom2 {
+	background-color: hsl(239, 80%, 30%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttonBack {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: hsl(29, 100%, 98%);
+	text-decoration: none;
+}
+.energy {
+	color: #6ed7f7;
+	display: flex;
+	font-size: 32px;
+}
+.energy img {
+	margin-left: 10px;
+}
+.score2 {
+	display: flex;
+	justify-content: center;
+	color: hsl(29, 100%, 98%);
+	font-size: 40px;
+}
+.score21 {
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	color: aliceblue;
+}
+.energy {
+	color: hsl(194, 90%, 30%);
+	font-size: 32px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.energy img {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	z-index: 3;
+}
+.tickets {
+	color: hsl(293, 90%, 40%);
+	display: flex;
+	font-size: 32px;
+	justify-content: left;
+	align-items: center;
+}
+.tickets img {
+	position: relative;
+	bottom: 0px;
+	width: 64px;
+	height: 64px;
+	z-index: 3;
+}
+.score1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.score3 {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: aliceblue;
+}
+#ticketBox,
+#energyBox {
+	width: 120px;
+	height: 37px;
+	background-color: rgb(95, 95, 95);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	right: 30px;
+}
+#energyFill {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(90deg, #6ed7f7 0%, #6ea2f7 100%);
+}
+#ticketFill {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(90deg, #e76ef7 0%, #e76ef7 100%);
+}
+#energyText,
+#ticketNum {
+	z-index: 2;
+}
+.upgrade {
+	background-color: hsl(239, 80%, 30%);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 15%;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.upgrade img {
+	align-self: center;
+}
+.upgrade div {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+}
+.price {
+	font-size: 40px;
+}
