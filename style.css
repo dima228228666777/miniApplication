@@ -118,6 +118,7 @@
 	align-items: center;
 	color: hsl(29, 100%, 98%);
 	padding: 20px;
+	overflow-y: scroll;
 }
 .main3 img {
 	width: 64px;
